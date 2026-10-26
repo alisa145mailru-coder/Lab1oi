@@ -16,6 +16,6 @@ generate_password() {
 
 for (( i=1; i<=count; i++ ))
 do
-    local pass=$(generate_password $length) 2>/dev/null || pass=$(generate_password $length)
+    pass=$(generate_password $length)
     echo "Пароль $i: $pass"
 done
